@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilory';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content{
+    background-color: rgba(0, 0, 0, 0.711);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* z-index: 2; */
+}
+nav{
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+nav h3{
+    font-size: 2.3vw;
+}
