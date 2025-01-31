@@ -61,17 +61,96 @@ function cursorEffect() {
 cursorEffect()
 
 function page2Animation() {
-  gsap.from("elem h1", {
-    y: 120,
-    stagger: 0.2,
-    duration: 1,
-    scrollTrigger: {
-      trigger: "#page2",
-      scroller: ".main",
-      start: "top 47%",
-      end: "top 46%",
-      markers: true,
-      scrub: 2
-    }
+  gsap.from(".elem h1", {
+      y: 120,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+          trigger: ".page2",
+          scroller: ".main",
+          start: "top 47%",
+          end: "top 37%",
+          scrub: 2
+      }
   })
 }
+page2Animation()
+
+function page4Animation() {
+  gsap.from(".elem4 h1", {
+      y: 120,
+      stagger: 0.2,
+      duration: 1,
+      scrollTrigger: {
+          trigger: ".page4",
+          scroller: ".main",
+          start: "top 47%",
+          end: "top 37%",
+          scrub: 2
+      }
+  })
+}
+page4Animation()
+
+
+function sliderAnimation(){
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+}
+sliderAnimation()
+
+
+var tl=gsap.timeline()
+
+tl.from(".loader h3",{
+    x:40,
+    opacity:0,
+    duration: 1,
+    stagger:0.3,
+})
+
+tl.to(".loader h3",{
+  opacity:0,
+  x:-20,
+  duration:1,
+  stagger:0.1
+})
+
+tl.to(".loader",{
+  opacity:0,
+})
+
+tl.to(".loader",{
+  display:"none"
+})
+
+tl.from(".page1-content h1 span",{
+  y:100,
+  opacity:0,
+  stagger:0.1,
+  duration:0.5,
+  delay:-0.5
+})
+
+gsap.from(".footer-end h1 span", {
+  y: 100,
+  opacity: 0,
+  stagger: 0.1,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".footer-end",
+    scroller: ".main", // Use ".main" if using Locomotive Scroll, otherwise remove
+    start: "top 80%", // When `.footer-end` enters 80% of the viewport
+    end: "top 50%", // Animation range
+    toggleActions: "play none none reset", // Replays every time when scrolling back
+  }
+});
+
+
