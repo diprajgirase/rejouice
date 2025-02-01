@@ -1,6 +1,6 @@
 # Modern Webasite 🌐
 
-A visually stunning website GSAP, Locomotive.js, and Swiper.js**
+A visually stunning website using GSAP, Locomotive.js, and Swiper.js**
 
 ## Features ✨
 - **Smooth animations** with GSAP  
