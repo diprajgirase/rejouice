@@ -92,6 +92,31 @@ function page4Animation() {
 }
 page4Animation()
 
+function cursorEffect1() {
+  var page5Content = document.querySelector(".page5")
+  var cursor = document.querySelector(".cursor1")
+
+  page5Content.addEventListener("mousemove", function (dets) {
+    gsap.to(cursor, {
+      x: dets.x,
+      y: dets.y
+    })
+  })
+
+  page5Content.addEventListener("mouseenter", function () {
+    gsap.to(cursor, {
+      scale: 1,
+      opacity: 1
+    })
+  })
+  page5Content.addEventListener("mouseleave", function () {
+    gsap.to(cursor, {
+      scale: 0,
+      opacity: 0
+    })
+  })
+}
+cursorEffect1()
 
 function sliderAnimation(){
   var swiper = new Swiper(".mySwiper", {
@@ -139,15 +164,15 @@ tl.from(".page1-content h1 span",{
   delay:-0.5
 })
 
-gsap.from(".footer-end h1 span", {
+gsap.from(".footer-bottom h1 span", {
   y: 100,
   opacity: 0,
   stagger: 0.1,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".footer-end",
+    trigger: ".footer-bottom",
     scroller: ".main", // Use ".main" if using Locomotive Scroll, otherwise remove
-    start: "top 80%", // When `.footer-end` enters 80% of the viewport
+    start: "top 80%", // When `.footer-bottom` enters 80% of the viewport
     end: "top 50%", // Animation range
     toggleActions: "play none none reset", // Replays every time when scrolling back
   }

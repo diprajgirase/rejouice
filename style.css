@@ -25,7 +25,7 @@ body {
 
 .main {
     position: relative;
-   
+
 }
 
 .page1 {
@@ -34,7 +34,7 @@ body {
     position: relative;
 }
 
-.cursor{
+.cursor {
     height: 6vw;
     width: 6vw;
     background-color: #FF5F38;
@@ -44,11 +44,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-#cursor h5{
-    font-size: 1.1vw;
+
+.cursor h5 {
+    font-size: 0.8vw;
 }
+
 .page1 video {
     height: 100%;
     width: 100%;
@@ -66,7 +68,7 @@ body {
     justify-content: space-between;
     /* padding-bottom: 5vw; */
     z-index: 9;
-    
+
 }
 
 nav {
@@ -90,7 +92,8 @@ nav h3 {
     line-height: 27vw;
     display: inline;
 }
-.page2{
+
+.page2 {
     height: 100vh;
     width: 100%;
     background-color: #FAF8F3;
@@ -101,13 +104,14 @@ nav h3 {
     margin-top: 3vw;
 }
 
-.page2-top{
+.page2-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1vw;
 
 }
+
 .page2-top h1 {
     font-size: 2vw;
     font-weight: lighter;
@@ -120,33 +124,38 @@ nav h3 {
     padding: 10vw;
     margin-top: 1vw;
 }
-.page3{
+
+.page3 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     padding: 3vw;
     background-color: #FAF8F3;
 }
-.page3-top{
+
+.page3-top {
     text-align: center;
 }
 
-.page3-top h4{
+.page3-top h4 {
     margin-bottom: 1vw;
     font-size: 1vw;
     font-weight: 500;
 }
-.page3-top h4 span{
+
+.page3-top h4 span {
     font-size: 0.7vw;
     background-color: black;
     color: white;
     padding: 2px 5px;
 }
-.page3-top h2{
+
+.page3-top h2 {
     font-size: 4vw;
     font-weight: 500;
 }
-.page3-elements{
+
+.page3-elements {
     height: 75vh;
     width: 100%;
     display: flex;
@@ -154,18 +163,21 @@ nav h3 {
     justify-content: space-between;
     margin-top: 8vw;
 }
-.page3-elements .box{
+
+.page3-elements .box {
     height: 100%;
     width: 32.5%;
     position: relative;
 }
-.page3-elements .box video{
+
+.page3-elements .box video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-.page3-elements .box img{
+
+.page3-elements .box img {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -173,10 +185,12 @@ nav h3 {
     object-position: center;
     transition: all linear 0.8s;
 }
-.page3-elements .box:hover img{
-opacity: 0;
+
+.page3-elements .box:hover img {
+    opacity: 0;
 }
-.page4{
+
+.page4 {
     height: 100vh;
     width: 100%;
     background-color: #FAF8F3;
@@ -187,13 +201,14 @@ opacity: 0;
     margin-top: 3vw;
 }
 
-.page4-top{
+.page4-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1vw;
 
 }
+
 .page4-top h1 {
     font-size: 2vw;
     font-weight: lighter;
@@ -206,7 +221,8 @@ opacity: 0;
     padding: 10vw;
     margin-top: 1vw;
 }
-.page5{
+
+.page5 {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -215,16 +231,20 @@ opacity: 0;
     justify-content: center;
     background-color: #FAF8F3;
 }
-.page5 video{
-    height:120%
+
+.page5 video {
+    height: 120%
 }
-.page5 svg{
+
+.page5 svg {
     position: absolute;
     height: 75%;
 }
-.page5 h3{
+
+.page5 h3 {
     font-weight: 100;
 }
+
 .overlay {
     position: absolute;
     top: 50%;
@@ -233,21 +253,42 @@ opacity: 0;
     text-align: center;
     color: white;
     font-size: 1rem;
-    z-index: 2; /* Ensures it stays on top of the video */
+    z-index: 2;
+    /* Ensures it stays on top of the video */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-.page6{
+}
+.cursor1 {
+    height: 6vw;
+    width: 6vw;
+    background-color: #000000;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9; /* Ensures it's on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* To ensure it doesn’t block other elements */
+}
+
+.cursor1 h5 {
+    font-size: 0.8vw; 
+    color: #fff; 
+    margin: 0; 
+}
+
+.page6 {
     height: 100vh;
     width: 100%;
     position: relative;
     padding: 4vw 0vw;
     background-color: #FAF8F3;
 }
-.page6 h1{
+
+.page6 h1 {
     font-size: 8vw;
     font-family: rejoy;
     font-weight: 100;
@@ -255,24 +296,26 @@ opacity: 0;
     width: 95%;
     margin-left: 2.5%;
 }
+
 .swiperdiv {
     height: 60vh;
     width: 100%;
     position: relative;
     margin-top: -4%;
-    
+
 }
+
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 .swiper-slide img {
@@ -280,7 +323,8 @@ opacity: 0;
     width: 24%;
     object-fit: cover;
 }
-.loader{
+
+.loader {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -293,23 +337,65 @@ opacity: 0;
     color: #fff;
     gap: 10px;
 }
-.loader h3{
+
+.loader h3 {
     font-size: 2vw;
 }
-.footer{
-    height: 100vh;
+
+.footer {
+    height: 100vh; /* Full-screen height */
     width: 100%;
     background-color: #000000;
+    display: flex;
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: space-between; /* Pushes content to edges */
+    font-weight: 500;
 }
-.footer-end{
+
+.footer-top {
+    color: #fff;
+    padding: 2vw 1vw;
+    
+}
+
+.footer-top button{
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border: 1.5px solid #ffffff; /* White border */
+    border-radius: 8px; /* Rounded corners for a sleek look */
+    padding: 10px 20px; /* Increases button size */
+    font-size: 1.1em; /* Enlarges text size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 1vw;
+
+}
+.footer-mid {
+    display: flex;
+    padding: 1vw;
+    padding-top: 9vw;
+    color: #fff;
+    justify-content: space-between; /* Aligns child elements left and right */
+    align-items: flex-end; /* Ensures .link-legal is at the bottom */
+}
+
+.link-legal {
+    display: flex;
+    gap: 1vw;
+}
+
+.footer-bottom {
     color: #fff;
     font-size: 12.5vw;
-    line-height: 59vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -7%;
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers horizontally */
 }
-.footer-end h1{
+
+.footer-bottom h1 {
     font-family: rejoy;
-    font-weight: 100;  
+    font-weight: 550;
+    margin: 0;
+    padding: 0;
 }
