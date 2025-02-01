@@ -227,24 +227,25 @@ nav h3 {
     width: 100%;
     position: relative;
     display: flex;
+}
+
+.page5-content {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FAF8F3;
 }
 
-.page5 video {
-    height: 120%
-}
-
-.page5 svg {
+.page5-content svg {
     position: absolute;
     height: 75%;
 }
 
-.page5 h3 {
-    font-weight: 100;
+.page5 video {
+    height: 125%;
 }
-
 .overlay {
     position: absolute;
     top: 50%;
@@ -252,32 +253,33 @@ nav h3 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 1rem;
     z-index: 2;
-    /* Ensures it stays on top of the video */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: 100;
 }
-.cursor1 {
-    height: 6vw;
-    width: 6vw;
-    background-color: #000000;
+.overlay h2{
+    font-size: 2vw;
+}
+.cursor2 {
+    height: 7.3vw;
+    width: 7.3vw;
+    background-color: black;
+    color: white;
     border-radius: 50%;
     position: fixed;
-    z-index: 9; /* Ensures it's on top */
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: translate(-50%, -50%);
-    pointer-events: none; /* To ensure it doesn’t block other elements */
 }
 
-.cursor1 h5 {
-    font-size: 0.8vw; 
-    color: #fff; 
-    margin: 0; 
+.cursor2 h5 {
+    font-size: 0.8vw;
+    font-weight: 500;
 }
 
 .page6 {
@@ -350,14 +352,24 @@ nav h3 {
     flex-direction: column; /* Stacks child elements vertically */
     justify-content: space-between; /* Pushes content to edges */
     font-weight: 500;
+    padding: 2vw 2vw;
 }
 
 .footer-top {
     color: #fff;
-    padding: 2vw 1vw;
+    display: flex;
+    justify-content: space-between;
     
 }
-
+.additional{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+.additional h5{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
 .footer-top button{
     background-color: #000000; /* Black background */
     color: #ffffff; /* White text */
@@ -373,8 +385,9 @@ nav h3 {
 .footer-mid {
     display: flex;
     padding: 1vw;
-    padding-top: 9vw;
+    padding-top: 7vw;
     color: #fff;
+    font-weight: 100;
     justify-content: space-between; /* Aligns child elements left and right */
     align-items: flex-end; /* Ensures .link-legal is at the bottom */
 }
@@ -388,7 +401,7 @@ nav h3 {
     color: #fff;
     font-size: 12.5vw;
     display: flex;
-    margin-top: -7%;
+    margin-top: -6%;
     align-items: center; /* Centers horizontally */
     justify-content: center; /* Centers horizontally */
 }

@@ -92,31 +92,32 @@ function page4Animation() {
 }
 page4Animation()
 
-function cursorEffect1() {
-  var page5Content = document.querySelector(".page5")
-  var cursor = document.querySelector(".cursor1")
+function cursorEffectPage5() {
+  var page5 = document.querySelector(".page5")
+  var cursor = document.querySelector(".cursor2");
 
-  page5Content.addEventListener("mousemove", function (dets) {
-    gsap.to(cursor, {
-      x: dets.x,
-      y: dets.y
-    })
+  page5.addEventListener("mousemove", function (dets) {
+      gsap.to(cursor, {
+          x: dets.x,
+          y: dets.y
+      });
+  });
+
+  page5.addEventListener("mouseenter", function () {
+      gsap.to(cursor, {
+          scale: 1,
+          opacity: 1
+      })
   })
 
-  page5Content.addEventListener("mouseenter", function () {
-    gsap.to(cursor, {
-      scale: 1,
-      opacity: 1
-    })
-  })
-  page5Content.addEventListener("mouseleave", function () {
-    gsap.to(cursor, {
-      scale: 0,
-      opacity: 0
-    })
+  page5.addEventListener("mouseleave", function () {
+      gsap.to(cursor, {
+          scale: 0,
+          opacity: 0
+      })
   })
 }
-cursorEffect1()
+cursorEffectPage5();
 
 function sliderAnimation(){
   var swiper = new Swiper(".mySwiper", {
